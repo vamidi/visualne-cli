@@ -1,0 +1,26 @@
+{
+	"name": "@vamidicreations/plugin-template-blank",
+	"description": "A preconfigured template for VisualNE",
+	"version": "1.0.1",
+	"scripts": {
+		"prepublishOnly": "npm run build",
+		"prebuild": "npm run lint",
+		"start": "snowpack dev",
+		"build": "snowpack build",
+		"format": "prettier --write \"src/**/*.js\"",
+		"lint": "prettier --check \"src/**/*.js\"",
+		"test": "echo \"This template does not include a test runner by default.\" && exit 1"
+	},
+	"keywords": [
+		"csp-template"
+	],
+	"author": {
+		"name": "",
+		"email": ""
+	},
+	"license": "MIT",
+	"dependencies": {
+		"prettier": "^2.0.5",
+		"esm": "^3.2.25"
+	}
+}
